@@ -23,14 +23,19 @@ public class WinMenu : MonoBehaviour
         GameplaySession session = GameplaySession.Instance;
         if (session.playerLeftPoints > session.playerRightPoints)
         {
+            //#2DFF30
+            winnerText.color = new Color(0.175f, 1f, 0.175f, 1f);
             winnerText.text = "Player 1 wins!!!";
         }
         else if(session.playerLeftPoints < session.playerRightPoints)
         {
+            //#00B3FF
+            winnerText.color = new Color(0, 0.70f, 1f, 1f);
             winnerText.text = "Player 2 wins!!!";
         }
         else
         {
+            winnerText.color = new Color(1, 0.9f, 0.9f, 1f);
             winnerText.text = "Stalemate!";
         }
     }

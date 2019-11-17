@@ -16,6 +16,8 @@ public class GameScreenManager : MonoBehaviour
 
     void OnGameOver()
     {
+        PauseUtility.Pause();
+
         pauseMenuTrigger.gameObject.SetActive(false);
         pauseMenu.gameObject.SetActive(false);
 
