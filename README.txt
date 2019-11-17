@@ -2,14 +2,17 @@
 |  Left Hand Vs Right Hand  |
 +===========================+
 
-Disclaimer:
-You NEED a PC-friendly controller to play this game.
-Keyboard and Mouse controls currently do not exist.
-
 Made for the first Esports Game Jam in 2019.
 
 Two players must pit head-to-head in a platforming race to collect the most coins.
 The only caveat: They must fight one another using the same controller!
+
+Itch.io
+https://davidsheadgames.itch.io/left-hand-vs-right-hand
+
+Disclaimer:
+You NEED a PC-friendly controller to play this game.
+Keyboard and Mouse controls currently do not exist.
 
 Controls:
 Player One:
