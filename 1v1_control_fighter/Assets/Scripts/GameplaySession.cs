@@ -42,6 +42,7 @@ public class GameplaySession : MonoBehaviour
             Debug.LogError("Missing the left or right player. Game will not function properly.");
         }
         TimeStampStarted = Time.time;
+        PauseUtility.Unpause();
     }
 
     // Update is called once per frame
@@ -55,6 +56,12 @@ public class GameplaySession : MonoBehaviour
         }
     }
 
+    public void ForceGameEnd()
+    {
+        isGameOver = true;
+        onGameOver.Invoke();
+    }
+
     private void OnDestroy()
     {
         if (this == Instance)
@@ -62,4 +69,5 @@ public class GameplaySession : MonoBehaviour
             Instance = null;
         }
     }
+
 }

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class WinMenu : MonoBehaviour
 {
@@ -22,16 +23,23 @@ public class WinMenu : MonoBehaviour
         GameplaySession session = GameplaySession.Instance;
         if (session.playerLeftPoints > session.playerRightPoints)
         {
-            winnerText.text = "Player 1 wins!";
+            winnerText.text = "Player 1 wins!!!";
         }
         else if(session.playerLeftPoints < session.playerRightPoints)
         {
-            winnerText.text = "Player 2 wins!";
+            winnerText.text = "Player 2 wins!!!";
         }
         else
         {
             winnerText.text = "Stalemate!";
         }
+    }
+
+    
+    private void Start()
+    {
+        // Technically this is okay at this time...?
+        EventSystem.current.SetSelectedGameObject(replayButton.gameObject);
     }
 
     private void Restart()
@@ -44,6 +52,8 @@ public class WinMenu : MonoBehaviour
     private void Quit()
     {
         // TODO
+        PauseUtility.Unpause();
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

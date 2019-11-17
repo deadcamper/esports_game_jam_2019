@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -7,28 +9,34 @@ using UnityEngine.UI;
 public class PauseMenuScript : MonoBehaviour
 {
     public Button resumeButton;
-    public Button helpButton;
     public Button quitButton;
 
     void Awake()
     {
         resumeButton.onClick.AddListener(Resume);
-        helpButton.onClick.AddListener(Help);
         quitButton.onClick.AddListener(Quit);
     }
+
 
     private void Resume()
     {
         gameObject.SetActive(false);
         PauseUtility.Unpause();
     }
-    private void Help()
-    {
-        // TODO
-    }
 
     private void Quit()
     {
-        // TODO
+        GameplaySession session = GameplaySession.Instance;
+
+        if(session)
+        {
+            session.ForceGameEnd();
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            PauseUtility.Unpause();
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }

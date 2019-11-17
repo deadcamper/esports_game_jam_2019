@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseMenuGameTrigger : MonoBehaviour
 {
-    public Canvas pauseMenuCanvas;
+    public PauseMenuScript pauseMenuCanvas;
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +17,8 @@ public class PauseMenuGameTrigger : MonoBehaviour
             else
             {
                 pauseMenuCanvas.gameObject.SetActive(true);
+
+                EventSystem.current.SetSelectedGameObject(pauseMenuCanvas.resumeButton.gameObject);
                 PauseUtility.Pause();
             }
         }
