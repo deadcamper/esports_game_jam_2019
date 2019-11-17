@@ -1,17 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CoinPickup : MonoBehaviour
 {
     public Transform coinVisual;
     public int pointValue = 25;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -27,6 +19,8 @@ public class CoinPickup : MonoBehaviour
             {
                 GameObject playerObject = collider.gameObject;
                 GameplaySession session = GameplaySession.Instance;
+
+                AudioSingleton.Instance?.coinPickup?.Play();
 
                 if (session)
                 {

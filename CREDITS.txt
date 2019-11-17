@@ -1,0 +1,17 @@
+Left Hand vs Right Hand
+
+Prototype made by:
+David Newel
+Thomas Ferrick
+
+At the Esports Game Jam 2019
+
+Additional assets used
+Standard assets from the Unity Asset Store:
+https://assetstore.unity.com/detail/essentials/asset-packs/standard-assets-for-unity-2017-3-32351
+
+Stock music provided by:
+www.bensound.com
+
+Coin pickup sound generated using BFXR:
+https://www.bfxr.net
