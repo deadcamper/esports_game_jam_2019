@@ -172,7 +172,8 @@ MonoBehaviour:
   animation: {fileID: 669375781043100508}
   launchSpeed: 10
   numberOfRewards: 10
-  rewardTemplate: {fileID: 0}
+  rewardTemplate: {fileID: 7135744990527561963, guid: f98b0f61eea563c479c595c9f8caca84,
+    type: 3}
   facing: 2
 --- !u!1 &2316799141757060959
 GameObject:

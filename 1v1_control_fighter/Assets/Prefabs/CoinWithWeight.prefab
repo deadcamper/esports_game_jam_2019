@@ -47,7 +47,7 @@ PrefabInstance:
     - target: {fileID: 1386732998133696971, guid: 7bcb338004a47d448909be0c1095f03e,
         type: 3}
       propertyPath: m_Name
-      value: WeightedCoin
+      value: CoinWithWeight
       objectReference: {fileID: 0}
     - target: {fileID: 1386732998133696960, guid: 7bcb338004a47d448909be0c1095f03e,
         type: 3}
