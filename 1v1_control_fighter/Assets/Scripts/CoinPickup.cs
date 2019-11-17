@@ -16,7 +16,7 @@ public class CoinPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinVisual.Rotate(new Vector3(Time.deltaTime * 0, 0, 10));
+        coinVisual.Rotate(new Vector3(0, 0, 10 * Time.timeScale));
     }
 
     void OnTriggerEnter2D(Collider2D collider)
