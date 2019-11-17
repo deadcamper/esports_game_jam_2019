@@ -13,5 +13,8 @@ https://assetstore.unity.com/detail/essentials/asset-packs/standard-assets-for-u
 Stock music provided by:
 www.bensound.com
 
+Chest sound effect provided by:
+www.soundbible.com
+
 Coin pickup sound generated using BFXR:
-https://www.bfxr.net
+www.bfxr.net

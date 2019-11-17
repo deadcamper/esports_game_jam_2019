@@ -6,6 +6,7 @@ public class AudioSingleton : MonoBehaviour
 
     public AudioSource coinPickup;
     public AudioSource music;
+    public AudioSource chestOpen;
 
     void OnEnable()
     {

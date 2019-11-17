@@ -36,6 +36,7 @@ public class TreasureCrate : MonoBehaviour
 
     IEnumerator GiftRewards()
     {
+        AudioSingleton.Instance?.chestOpen?.Play();
         animation.Play();
         while (animation.isPlaying)
         {
