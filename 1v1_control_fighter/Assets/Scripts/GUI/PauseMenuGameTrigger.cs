@@ -7,7 +7,7 @@ public class PauseMenuGameTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Back") || Input.GetButtonDown("Start"))
+        if (Input.GetButtonDown("Back") || Input.GetButtonDown("Start") || Input.GetKeyDown(KeyCode.Escape))
         {
             if (pauseMenuCanvas.gameObject.activeSelf)
             {
