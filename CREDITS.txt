@@ -10,6 +10,12 @@ Additional assets used
 Standard assets from the Unity Asset Store:
 https://assetstore.unity.com/detail/essentials/asset-packs/standard-assets-for-unity-2017-3-32351
 
+Unity Asset Store: Antided GameDev
+LowPoly Sci-FI Crates Free
+
+Unity Asset Store: Pulsar Bytes
+Animated Planet Bagyo
+
 Stock music provided by:
 www.bensound.com
 
@@ -18,3 +24,4 @@ www.soundbible.com
 
 Coin pickup sound generated using BFXR:
 www.bfxr.net
+
