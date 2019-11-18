@@ -21,10 +21,16 @@ public class MainMenu : MonoBehaviour
 
     public Button helpBackButton;
 
+    public enum PreferredWindow
+    {
+        MainMenu,
+        LevelSelect
+    }
+
+    public static PreferredWindow choiceWindow = PreferredWindow.MainMenu;
+
     void Start()
     {
-        mainMenuWindow.SetActive(true);
-
         mainMenuLevelButton.onClick.AddListener(OnLevelSelect);
         mainMenuHelpButton.onClick.AddListener(OnHelpSelect);
         mainMenuQuitButton.onClick.AddListener(OnQuit);
@@ -36,6 +42,15 @@ public class MainMenu : MonoBehaviour
         levelSelectBackButton.onClick.AddListener(OnMenuSelect);
 
         helpBackButton.onClick.AddListener(OnMenuSelect);
+
+        if (choiceWindow == PreferredWindow.LevelSelect)
+        {
+            OnLevelSelect();
+        }
+        else
+        {
+            OnMenuSelect();
+        }
     }
 
     void OnMenuSelect()
@@ -61,7 +76,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    void OpenWindow(GameObject window)
+    private void OpenWindow(GameObject window)
     {
         mainMenuWindow.SetActive(false);
         levelSelectWindow.SetActive(false);
