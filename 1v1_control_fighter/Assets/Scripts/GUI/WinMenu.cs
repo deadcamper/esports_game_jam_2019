@@ -44,7 +44,7 @@ public class WinMenu : MonoBehaviour
     private void Start()
     {
         // Technically this is okay at this time...?
-        EventSystem.current.SetSelectedGameObject(replayButton.gameObject);
+        EventSystem.current.SetSelectedGameObject(quitButton.gameObject);
     }
 
     private void Restart()
@@ -58,6 +58,7 @@ public class WinMenu : MonoBehaviour
     {
         // TODO
         PauseUtility.Unpause();
+        MainMenu.choiceWindow = MainMenu.PreferredWindow.LevelSelect;
         SceneManager.LoadScene("MainMenu");
     }
 
