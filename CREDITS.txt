@@ -7,7 +7,7 @@ Thomas Ferrick
 At the Esports Game Jam 2019
 
 Additional assets used
-Standard assets from the Unity Asset Store:
+Unity Asset Store: Standard Assets 
 https://assetstore.unity.com/detail/essentials/asset-packs/standard-assets-for-unity-2017-3-32351
 
 Unity Asset Store: Antided GameDev
